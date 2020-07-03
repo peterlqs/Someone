@@ -10,8 +10,8 @@ def sp():
 win.title("Stonk!")
 win.geometry("600x400")
 win.resizable(width=False, height=False)
-font ="Times New Roman”
-canva = Canvas(win,height =400,width=600,bg='grey')
+font ="Times New Roman"
+canva = Canvas(win,height =400,width=600,bg='grey58')
 canva.create_text(35,20,font=(font, 20,"underline"),text="TSLA")
 canva.create_text(70,44,font=(font, 10),text="Tesla, CEO Elon Musk")
 canva.create_text(68,120,font=(font, 20,"underline"),text="INX IDXSP")
@@ -53,10 +53,10 @@ sss=soup.find_all("div",{"class":"comp tod__article mntl-block"})[0].text
 canva.create_text(82,225,font=("Ariel bold",15),text="Term of the day :",fill="black")
 canva.create_text(300,310,font=("Ariel",15),text=sss,fill="white",width =605)
 
-url5 = “https://www.marketwatch.com/”
-url6 = “https://seekingalpha.com/”
-url7 = “https://www.investopedia.com/”
-url8 = “https://vnexpress.net/kinh-doanh”
+url5 = "https://www.marketwatch.com/"
+url6 = "https://seekingalpha.com/"
+url7 = "https://www.investopedia.com/"
+url8 = "https://vnexpress.net/kinh-doanh"
 def marketwatch():
     open(webbrowser.open_new(url5))
 def seekingalpha():
@@ -65,15 +65,15 @@ def investopia():
     open(webbrowser.open_new(url7))
 def vnexpress():
     open(webbrowser.open_new(url8))
-but5 = Button(canva,text=“Market Watch”, command=marketwatch,bg="gray67")
-but5.place(x=200,y=50)
-but6 = Button(canva,text=“Seeking Alpha”, command=marketwatch,bg="gray67")
-but6.place(x=200,y=70)
-but7= Button(canva,text=“Investopedia”, command=investopia,bg="gray67")
-but7.place(x=200,y=90)
-but8= Button(canva,text=“Vnexpress Business”, command=vnexpress,bg="gray67")
-but8.place(x=200,y=110)
-
+but5 = Button(canva,text="Market Watch", command=marketwatch,bg="gray67")
+but5.place(x=400,y=50)
+but6 = Button(canva,text="Seeking Alpha", command=marketwatch,bg="gray67")
+but6.place(x=400,y=75)
+but7= Button(canva,text="Investopedia", command=investopia,bg="gray67")
+but7.place(x=400,y=100)
+but8= Button(canva,text="Vnexpress Business", command=vnexpress,bg="gray67")
+but8.place(x=400,y=125)
+canva.create_text(480,30,text="Economic News :",font=(font,20))
 
 canva.pack()
 win.mainloop()
