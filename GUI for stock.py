@@ -1,10 +1,12 @@
 from tkinter import *
 import webbrowser
 win = Tk()
+url = "https://finance.yahoo.com/quote/TSLA/"
+url2 = "https://finance.yahoo.com/quote/%5EGSPC/"
 def tsla():
-    open(webbrowser.open_new("https://finance.yahoo.com/quote/TSLA/"))
+    open(webbrowser.open_new(url))
 def sp():
-    open(webbrowser.open_new("https://finance.yahoo.com/quote/%5EGSPC/"))
+    open(webbrowser.open_new(url2))
 win.title("Stonk!")
 win.geometry("600x400")
 win.resizable(width=False, height=False)
@@ -21,8 +23,7 @@ but2.place(x=132,y=108)
 
 from bs4 import BeautifulSoup
 import requests
-url = "https://finance.yahoo.com/quote/TSLA/"
-url2 = "https://finance.yahoo.com/quote/%5EGSPC/"
+
 res = requests.get(url)
 res2 = requests.get(url2)
 soup = BeautifulSoup(res.text,"lxml")
@@ -52,6 +53,15 @@ sss=soup.find_all("div",{"class":"comp tod__article mntl-block"})[0].text
 canva.create_text(82,225,font=("Ariel bold",15),text="Term of the day :",fill="black")
 canva.create_text(300,310,font=("Ariel",15),text=sss,fill="white",width =605)
 
+url5 = “”
+url6 = “”
+url7 = “”
+url8 = “”
+def marketwatch():
+    open(webbrowser.open_new(url5))
+def seekingalpha():
+    open(webbrowser.open_new(url6))
+but5 = Button 
 
 
 canva.pack()
