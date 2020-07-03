@@ -53,10 +53,10 @@ sss=soup.find_all("div",{"class":"comp tod__article mntl-block"})[0].text
 canva.create_text(82,225,font=("Ariel bold",15),text="Term of the day :",fill="black")
 canva.create_text(300,310,font=("Ariel",15),text=sss,fill="white",width =605)
 
-url5 = “”
-url6 = “”
-url7 = “”
-url8 = “”
+url5 = “https://www.marketwatch.com/”
+url6 = “https://seekingalpha.com/”
+url7 = “https://www.investopedia.com/”
+url8 = “https://vnexpress.net/kinh-doanh”
 def marketwatch():
     open(webbrowser.open_new(url5))
 def seekingalpha():
@@ -67,11 +67,11 @@ def vnexpress():
     open(webbrowser.open_new(url8))
 but5 = Button(canva,text=“Market Watch”, command=marketwatch)
 but5.place(x=200,y=50)
-but6 = Button(canva,text=“Market Watch”, command=marketwatch)
+but6 = Button(canva,text=“Seeking Alpha”, command=marketwatch)
 but6.place(x=200,y=70)
-but7= Button(canva,text=“Market Watch”, command=marketwatch)
+but7= Button(canva,text=“Investopedia”, command=investopia)
 but7.place(x=200,y=90)
-but8= Button(canva,text=“Market Watch”, command=marketwatch)
+but8= Button(canva,text=“Vnexpress Business”, command=vnexpress)
 but8.place(x=200,y=110)
 
 
