@@ -65,13 +65,13 @@ def investopia():
     open(webbrowser.open_new(url7))
 def vnexpress():
     open(webbrowser.open_new(url8))
-but5 = Button(canva,text=“Market Watch”, command=marketwatch)
+but5 = Button(canva,text=“Market Watch”, command=marketwatch,bg="gray67")
 but5.place(x=200,y=50)
-but6 = Button(canva,text=“Seeking Alpha”, command=marketwatch)
+but6 = Button(canva,text=“Seeking Alpha”, command=marketwatch,bg="gray67")
 but6.place(x=200,y=70)
-but7= Button(canva,text=“Investopedia”, command=investopia)
+but7= Button(canva,text=“Investopedia”, command=investopia,bg="gray67")
 but7.place(x=200,y=90)
-but8= Button(canva,text=“Vnexpress Business”, command=vnexpress)
+but8= Button(canva,text=“Vnexpress Business”, command=vnexpress,bg="gray67")
 but8.place(x=200,y=110)
 
 
