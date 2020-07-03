@@ -61,7 +61,18 @@ def marketwatch():
     open(webbrowser.open_new(url5))
 def seekingalpha():
     open(webbrowser.open_new(url6))
-but5 = Button 
+def investopia():
+    open(webbrowser.open_new(url7))
+def vnexpress():
+    open(webbrowser.open_new(url8))
+but5 = Button(canva,text=“Market Watch”, command=marketwatch)
+but5.place(x=200,y=50)
+but6 = Button(canva,text=“Market Watch”, command=marketwatch)
+but6.place(x=200,y=70)
+but7= Button(canva,text=“Market Watch”, command=marketwatch)
+but7.place(x=200,y=90)
+but8= Button(canva,text=“Market Watch”, command=marketwatch)
+but8.place(x=200,y=110)
 
 
 canva.pack()
