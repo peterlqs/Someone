@@ -8,13 +8,12 @@ def sp():
 win.title("Stonk!")
 win.geometry("600x400")
 win.resizable(width=False, height=False)
-font ="INTRO COND BLACK FREE"
-font2 ="INTRO COND LIGHT FREE"
+font ="Times New Roman”
 canva = Canvas(win,height =400,width=600,bg='grey')
 canva.create_text(35,20,font=(font, 20,"underline"),text="TSLA")
-canva.create_text(70,44,font=(font2, 10),text="Tesla, CEO Elon Musk")
-canva.create_text(65,120,font=(font, 20,"underline"),text="INX IDXSP")
-canva.create_text(28,145,font=(font2, 10),text="S&P 500")
+canva.create_text(70,44,font=(font, 10),text="Tesla, CEO Elon Musk")
+canva.create_text(68,120,font=(font, 20,"underline"),text="INX IDXSP")
+canva.create_text(28,145,font=(font, 10),text="S&P 500")
 but = Button(canva,text="TSLA info",command= tsla,bg="gray67")
 but.place(x=70,y=7)
 but2 = Button(canva,text="S&P info",command= sp,bg="grey67")
@@ -42,9 +41,9 @@ if "+" in m:
 else:
     ha ="red"
 canva.create_text(100,79,font=(font,40),text=s)
-canva.create_text(290,72,font=("Ariel bold",19),text=z,fill=hah)
+canva.create_text(290,72,font=("Arial bold",19),text=z,fill=hah)
 canva.create_text(100,180,font=(font,40),text=n)
-canva.create_text(290,173,font=("Ariel bold",19),text=m,fill=ha)
+canva.create_text(290,173,font=("Arial bold",19),text=m,fill=ha)
 
 urlzz = "https://www.investopedia.com/financial-term-dictionary-4769738"
 reszz = requests.get(urlzz)
